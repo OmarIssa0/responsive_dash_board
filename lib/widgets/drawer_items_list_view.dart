@@ -24,10 +24,8 @@ class _DrawerItemListViewState extends State<DrawerItemListView> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return SliverList.builder(
       itemCount: items.length,
-      physics: const NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: () {
