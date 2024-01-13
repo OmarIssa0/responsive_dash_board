@@ -15,7 +15,7 @@ class AllExpensesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return isSelected
-        ? InActiveAllExpensesItem(allExpensesItemModel: allExpensesItemModel)
-        : ActiveAllExpensesItem(allExpensesItemModel: allExpensesItemModel);
+        ? ActiveAllExpensesItem(allExpensesItemModel: allExpensesItemModel)
+        : InActiveAllExpensesItem(allExpensesItemModel: allExpensesItemModel);
   }
 }
