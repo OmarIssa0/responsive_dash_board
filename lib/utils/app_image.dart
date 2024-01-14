@@ -33,6 +33,10 @@ class Assets {
   /// assets/image/convert-card.svg
   static const String imageConvertCard = "assets/image/convert-card.svg";
 
+  /// Assets for imageGallery
+  /// assets/image/gallery.svg
+  static const String imageGallery = "assets/image/gallery.svg";
+
   /// Assets for imageGraph
   /// assets/image/graph.svg
   static const String imageGraph = "assets/image/graph.svg";
@@ -49,6 +53,10 @@ class Assets {
   /// assets/image/moneys.svg
   static const String imageMoneys = "assets/image/moneys.svg";
 
+  /// Assets for imageMyCart
+  /// assets/image/my_cart.png
+  static const String imageMyCart = "assets/image/my_cart.png";
+
   /// Assets for imageSetting2
   /// assets/image/setting-2.svg
   static const String imageSetting2 = "assets/image/setting-2.svg";
@@ -57,3 +65,4 @@ class Assets {
   /// assets/image/wallet-2.svg
   static const String imageWallet2 = "assets/image/wallet-2.svg";
 }
+
