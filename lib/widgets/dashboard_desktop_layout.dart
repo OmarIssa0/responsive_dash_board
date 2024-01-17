@@ -1,5 +1,6 @@
 import 'package:admin_dash_board/widgets/all_expenses_and_quick_Invoice_setion.dart';
 import 'package:admin_dash_board/widgets/custom_drawer.dart';
+import 'package:admin_dash_board/widgets/income_section.dart';
 import 'package:admin_dash_board/widgets/my_cart_and_trasnction_history_section.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,14 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(width: 24),
         // Expanded(child: CustomDotIndicator(isActive: false))
         Expanded(
-          child: MyCartAndTransctionHistorySection(),
+          child: Column(
+            children: [
+              SizedBox(height: 40),
+              MyCartAndTransctionHistorySection(),
+              SizedBox(height: 24),
+              Expanded(child: IncomeSection()),
+            ],
+          ),
         )
       ],
     );
