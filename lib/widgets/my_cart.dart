@@ -26,10 +26,10 @@ class MyCart extends StatelessWidget {
               contentPadding:
                   const EdgeInsets.only(left: 31, right: 42, top: 16),
               title: Text('Name Cart',
-                  style:
-                      AppStyles.styleRegular16.copyWith(color: Colors.white)),
+                  style: AppStyles.styleRegular16(context)
+                      .copyWith(color: Colors.white)),
               subtitle:
-                  const Text('Syah Bandi', style: AppStyles.styleMedium20),
+                  Text('Syah Bandi', style: AppStyles.styleMedium20(context)),
               trailing: SvgPicture.asset(Assets.imageGallery),
             ),
             const Expanded(child: SizedBox()),
@@ -40,19 +40,21 @@ class MyCart extends StatelessWidget {
                 children: [
                   Text(
                     '0918 8124 0042 8129',
-                    style:
-                        AppStyles.styleSemiBold24.copyWith(color: Colors.white),
+                    style: AppStyles.styleSemiBold24(context)
+                        .copyWith(color: Colors.white),
                   ),
                   Text(
                     '12/20 - 124',
-                    style:
-                        AppStyles.styleRegular16.copyWith(color: Colors.white),
+                    style: AppStyles.styleRegular16(context)
+                        .copyWith(color: Colors.white),
                   ),
                 ],
               ),
             ),
-            const SizedBox(
-              height: 54 - 28,
+            const Flexible(
+              child: SizedBox(
+                height: 54 - 28,
+              ),
             ),
           ],
         ),

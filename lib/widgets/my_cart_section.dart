@@ -29,9 +29,9 @@ class _MyCartSectionState extends State<MyCartSection> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
+        Text(
           'My cart',
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         const SizedBox(height: 20),
         MyCardsPageView(

@@ -2,7 +2,10 @@ import 'package:admin_dash_board/views/dashboard_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const MyApp(),
+  );
+  // child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
